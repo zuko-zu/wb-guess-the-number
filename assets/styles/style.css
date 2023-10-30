@@ -1,0 +1,109 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #0a5ec4cf;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  color:  #1A1A1A;
+  font-family: TT Norms;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.button {
+  display: block;
+  background-color: #D8D8D8;
+  border-radius: 10px;
+  width: 100%;
+  border: 1px solid #E6E6E6;
+  padding: 15px;
+  cursor: pointer;
+
+  color:  #1A1A1A;
+  font-family: TT Norms;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+
+  text-align: center;
+}
+
+.button:hover {
+  background-color: #d6d4d4;
+}
+
+.button:active {
+  background-color: #cecbcb;
+}
+
+.playground {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1000px;
+  min-height: 600px;
+
+  border-radius: 8px;
+  background: #FFF;
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+.playground__section {
+  width: 50%;
+  position: relative;
+  padding: 30px;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  background-color: #D8D8D8;
+  border: none;
+  font: inherit;
+}
+
+.guess-window__input {
+  width: 100%;
+}
+
+.guess-window button {
+  margin-bottom: 20px;
+}
+
+.playground__section {
+  display: none;
+}
+
+.start-window {
+  display: block;
+}
+
+.win-message-text {
+  font-size: 72px;
+  text-align: center;
+  color: green;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Угадай число</title>
+  <link rel="stylesheet" href="./assets/styles/style.css">
+</head>
+<body>
+  <header class="header">
+    <h1 class="visually-hidden">Угадай число</h1>
+  </header>
+  <main class="main">
+    <section class="playground">
+      <h2 class="visually-hidden">Игровое поле</h2>
+      <section class="start-window playground__section">
+        <p class="start-window__input-wrapper">
+          <label for="minValue" class="label">Введите минимальное значение</label>
+          <input type="number" class="input" id="minValue" min="1" max="100" placeholder="Введите минимальное значение" value="1" required>
+        </p>
+        <p class="start-window__input-wrapper">
+          <label for="maxValue" class="label">Введите максимальное значение</label>
+          <input type="number" class="input" id="maxValue" min="0" max="100" placeholder="Введите максимальное значение" value="1000" required>
+        </p>  
+        <button class="button start-window__start-btn">Начать игру</button>
+      </section>
+      <section class="guess-window playground__section">
+        <p class="guess-window__attempt">Колличество попыток: <span class="guess-window__attempt-count">0</span></p>
+        <p class="guess-window__input-wrapper">
+          <label for="guessNumber" class="label visually-hidden">Введите предполагаемое число</label>
+          <input type="number" class="input guess-window__input" id="guessNumber" min="0" max="1000" placeholder="Введите предполагаемое число" required>
+        </p>  
+        <button class="button guess-window__guess-btn">Угадать число</button>
+        <button class="button guess-window__restart-btn restart-btn">Начать игру заново</button>
+      </section>
+
+      <section class="finish-window playground__section">
+        <p class="win-message-text">Вы угадали!</p>
+        <button class="button finish-window__restart-btn restart-btn">Сыграть еще раз</button>
+      </section>
+      
+    </section>
+  </main>
+  <script src="./js/index.js"></script>
+  <!-- <script type="module" src="./js/download.js"></script>
+  <script type="module" src="./js/addText.js"></script>
+  <script type="module" src="./js/dragAndDrop.js"></script> -->
+</body>
+</html>
